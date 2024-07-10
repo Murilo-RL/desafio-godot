@@ -1,0 +1,1 @@
+Arquivo feito para entrega do projeto do curso de godot da dio, aonde foi ensinado cada passo a criação de um jogo 

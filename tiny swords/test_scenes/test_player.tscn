@@ -1,0 +1,114 @@
+[gd_scene load_steps=5 format=3 uid="uid://dxyuy1g84ttfb"]
+
+[ext_resource type="Texture2D" uid="uid://dd4jghryboee" path="res://AddsOn/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="1_dsidc"]
+[ext_resource type="PackedScene" uid="uid://ucjdmkef87hw" path="res://player/player.tscn" id="2_1uhcy"]
+[ext_resource type="PackedScene" uid="uid://gl4vmcqarmmo" path="res://enemies/pawn.tscn" id="3_7hgbd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ejkmw"]
+line_spacing = 18.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="WarriorBlue" type="Sprite2D" parent="."]
+position = Vector2(1786, 355)
+texture = ExtResource("1_dsidc")
+
+[node name="Label" type="Label" parent="WarriorBlue"]
+offset_left = 578.0
+offset_top = -709.0
+offset_right = 607.0
+offset_bottom = -686.0
+scale = Vector2(2, 2)
+text = "Idle"
+
+[node name="Label2" type="Label" parent="WarriorBlue"]
+offset_left = 580.0
+offset_top = -507.0
+offset_right = 609.0
+offset_bottom = -484.0
+scale = Vector2(2, 2)
+text = "Run"
+
+[node name="Label3" type="Label" parent="WarriorBlue"]
+offset_left = 583.0
+offset_top = -313.0
+offset_right = 614.0
+offset_bottom = -290.0
+scale = Vector2(2, 2)
+text = "attack side 1"
+
+[node name="Label4" type="Label" parent="WarriorBlue"]
+offset_left = 585.0
+offset_top = -118.0
+offset_right = 683.0
+offset_bottom = -95.0
+scale = Vector2(2, 2)
+text = "attack side 2"
+
+[node name="Label5" type="Label" parent="WarriorBlue"]
+offset_left = 590.0
+offset_top = 260.0
+offset_right = 688.0
+offset_bottom = 283.0
+scale = Vector2(2, 2)
+text = "attack down 2"
+
+[node name="Label6" type="Label" parent="WarriorBlue"]
+offset_left = 572.0
+offset_top = 62.0
+offset_right = 681.0
+offset_bottom = 85.0
+scale = Vector2(2, 2)
+text = "attack down 1"
+
+[node name="Label7" type="Label" parent="WarriorBlue"]
+offset_left = 591.0
+offset_top = 441.0
+offset_right = 700.0
+offset_bottom = 464.0
+scale = Vector2(2, 2)
+text = "attack up 1"
+
+[node name="Label8" type="Label" parent="WarriorBlue"]
+offset_left = 585.0
+offset_top = 648.0
+offset_right = 694.0
+offset_bottom = 671.0
+scale = Vector2(2, 2)
+text = "attack up 2"
+
+[node name="Label13" type="Label" parent="WarriorBlue"]
+offset_left = -497.0
+offset_top = -793.0
+offset_right = -157.0
+offset_bottom = -770.0
+scale = Vector2(3, 3)
+text = " 0            1             2              3             4             5"
+
+[node name="Label14" type="Label" parent="WarriorBlue"]
+offset_left = -611.0
+offset_top = -709.0
+offset_right = -605.0
+offset_bottom = -504.0
+scale = Vector2(4, 4)
+text = "012345678"
+label_settings = SubResource("LabelSettings_ejkmw")
+autowrap_mode = 3
+
+[node name="Player" parent="." instance=ExtResource("2_1uhcy")]
+position = Vector2(539, 375)
+
+[node name="Pawn" parent="." instance=ExtResource("3_7hgbd")]
+position = Vector2(134, 446)
+
+[node name="Pawn2" parent="." instance=ExtResource("3_7hgbd")]
+position = Vector2(638, 540)
+
+[node name="Pawn3" parent="." instance=ExtResource("3_7hgbd")]
+position = Vector2(389, 220)
+
+[node name="Pawn4" parent="." instance=ExtResource("3_7hgbd")]
+position = Vector2(786, 415)
+
+[node name="Pawn5" parent="." instance=ExtResource("3_7hgbd")]
+position = Vector2(652, 227)
